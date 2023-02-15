@@ -1,0 +1,6 @@
+//searching space
+if the user typed the space title/Username incorrect or space cannot be found it should display.
+
+a.)"Incorrect typing prevented us from finding the space you were looking for,Or the space is not accessible"
+b.)"You either typed it incorrectly or we were unable to locate the space or user you were looking for,Please double-check your input."
+c.)"If we couldn't locate the space you were looking for, you either typed it incorrectly or it was not available. Please double-check the space title."

@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+
+}
+.mySlides {display: none}
+img {
+    vertical-align: middle;
+    width: 100%;
+    height: 400px;
+}
+.container{
+    margin-top: 60px;
+    text-align: center;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #396EB0;
+    padding: 10px;
+    box-shadow: 0px 3px 5px grey;
+    z-index: 1;
+}
+
+header img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    
+}
+header a{
+    text-decoration: none;
+    padding: 0px 10px;
+    color: #ffff;
+}
+
+/* Slideshow container */
+.slider-cont{
+    display: inline-block;
+}
+    .slideshow-container {
+
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+    }
+  
+    .mySlides {
+        display: none;
+    }
+  
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: white;
+        font-size: 10px;
+        transition: 0.6s ease;
+        user-select: none;
+    }
+    .prev{
+        left: 0;
+        width: 10px;
+        line-height: 10px;
+        height: 10px;
+    }
+    .next {
+        right: 0;
+        width: 10px;
+        line-height: 10px;
+        height: 10px;
+    }
+    
+  /* Caption*/
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+
+
+     /* Next & previous buttons */
+     .prev {
+        cursor: pointer;
+        float: left;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+      }
+      .next {
+        cursor: pointer;
+        float: right;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+      } 
+   
+      /* Caption text */
+      .text {
+        color:#717171 ;
+        font-size: 30px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        
+      }
+
+      /* The dots/bullets/indicators */
+      .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+      .slider-cont{
+        display: inline-block;
+        margin: 0px auto;
+      }
+      .active, .dot:hover {
+        background-color: #717171;
+      }
+      
+      /* Fading animation */
+      .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+      
+      @keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+      }
+
+/* form container*/
+form{
+    margin-top: 30px;
+}
+.form-sec{
+    display: inline-block;
+    vertical-align: top;
+    width: 600px;
+}
+    .form-sec h1{
+        text-align: center;
+        margin-top: 30px;
+        color: #695E5E;
+    }
+    .form-sec p{
+        width: 500px;
+        margin: 0px auto;
+
+        color: #695E5E;
+        text-align: start;
+    }
+    .form-container{
+        text-align: start;
+        margin:0px auto;
+        width: 500px;
+        border-radius: 10px;
+        box-shadow: 5px 5px 15px gray;
+    }
+        #emailLogin{
+            background-color: rgb(244, 244, 244);
+            display: inline-block;
+            border: none;
+            outline: none;
+            font-size: 15px;
+            padding: 10px;
+            width: 80%;
+        }
+        #passLogin{
+            display: inline-block;
+            border: none;
+            outline: none;
+            font-size: 15px;
+            padding: 10px;
+            width: 80%;
+        }
+
+        label{
+            margin-left: 30px;
+            font-size: small;
+            color: gray;
+        }
+
+        #passwordIcon{
+            width: 20px;
+            height: 20px;
+            
+        }
+        
+        #forgot{
+            width: 500px;
+            margin: 0px auto;
+            margin-top: 10px;
+            text-align: start;
+        }
+        #forgot a{
+            margin: 0px 20px;
+            text-decoration: none;
+            color: #396EB0;
+        }
+
+        #forgot a:hover{
+            text-decoration: underline;
+            color: #396EB0;
+        }
+
+        #login{
+            float:left;
+            padding: 10px 50px;
+            margin: 25px 0px;
+            margin-left: 50px;
+            border-radius: 30px;
+            outline: none;
+            border: none;
+            color: white;
+            text-decoration: none;
+            background-color: #396EB0;
+            box-shadow: 5px 5px 5px gray;
+        }
+        #create{
+            float: right;
+            padding: 10px 50px;
+            margin: 25px 0px;
+            margin-right: 50px;
+            border-radius: 30px;
+            text-decoration: none;
+            color: black;
+            border: none;
+            outline: none;
+            background-color: white;
+            box-shadow: 5px 5px 5px gray;
+        }
+        .form-container .email{
+            background-color: rgb(244, 244, 244);
+            padding: 20px;
+        }
+      
+            .form-container .email #envelope{
+                display: inline-block;
+                vertical-align: middle;
+                overflow: hidden;
+            }
+        .form-container .password{
+            padding: 20px;
+        }
+
+            .form-container .password #lock{
+                display: inline-block;
+                vertical-align: middle;
+                overflow: hidden;
+                
+            }
+            .form-container .password #passwordIcon{
+                display: inline-block;
+                vertical-align: middle;
+                overflow: hidden;
+                
+            }
+.newAccount{
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    visibility: hidden;
+    width: 400px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;    
+    box-shadow: 5px 5px 5px gray;
+    z-index: 1;
+}   
+    #firstName{
+        display:  inline-block;
+        padding: 10px 0px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        outline: 1px solid gray;
+        border: none;
+        width: 190px;
+        float: left;
+    }
+   #lastName{
+        display:  inline-block;
+        padding: 10px 0px;
+        margin-bottom: 20px;
+        outline: 1px solid gray;
+        border: none;
+        border-radius: 10px;
+        width: 190px;
+        float: right;
+    }
+    #phone,#emailReg, .passReg{
+        padding: 10px 0px;
+        width: 100%;
+        outline: 1px solid gray;
+        border: none;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+    /* remove input type[number] scroll */
+    input::-webkit-inner-spin-button,
+    input::-webkit-outer-spin-button{
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    #cancel{
+        display:  inline-block;
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+        width: 190px;
+        float: left;
+    }
+    #signup{
+        display:  inline-block;
+        padding: 10px;
+        border-radius: 10px;
+        border: none;
+        background-color: #396EB0;
+        color: white;
+        width: 190px;
+        float: right;
+    }
+
+     /* Social links */
+       
+            #social p{
+                text-align: center;
+                overflow: hidden;
+            }   
+            
+            #social a{ 
+                display: inline-block;
+                padding: 0px 10px;
+                margin-top: 10px;
+                overflow: hidden;
+            }
+            #social a img{
+                display: inline-block !important;
+                width: 40px;
+                height: 40px;
+            }
+        
+            .slideshow-container {
+                display: inline-block;
+                padding:0px 15px;
+                position: relative;
+               
+              }
+              .slideshow-container img{
+                width: 600px;
+                height: 400px;
+              }
+            .slider-cont h1{
+                text-align: center;
+                margin-top: 30px;
+
+                font-size: 24px;
+                width: 400px;
+                color: #695E5E;
+            }
+           
+
+/* About Developers Page */
+main .developer{
+    text-align: center;
+    margin: 100px 0px;
+}
+main section{
+    margin-bottom: 40px;
+}
+    main section p{
+        margin: 0px auto;
+        width: 500px;
+        text-align: center;
+    } 
+    main h1{
+        padding-bottom: 10px;
+        font-size: 20px;
+    }
+        main h1:nth-last-child(1){
+            font-weight: 300;
+        }
+    main .FullStack{
+        display:  inline-block;
+        margin: 10px;
+        margin-right:40px;
+        margin-bottom: 30px;
+        text-align: start;
+    }
+        main .FullStack img{
+            display: inline-block;
+            margin-right: 20px;
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+    main .FrontEnd{
+        display:  inline-block;
+        margin: 10px;
+        text-align:start;
+        margin-right:40px;
+    }
+    
+        main .FrontEnd img{
+            display: inline-block;
+            margin-right: 20px;
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        main .dev{
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+/*Navbar Media Query */
+
+/* Mobile View */
+@media only screen and (max-width: 480px){
+
+}
+
+/* Tablet View */
+@media only screen and (min-width: 481px){
+
+}
+
+/* Desktop View */
+@media only screen and (min-width: 1024px){
+ 
+}
